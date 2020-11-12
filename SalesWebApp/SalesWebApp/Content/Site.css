@@ -129,9 +129,7 @@ input:focus, select:focus, textarea:focus {
 
 
 @media (min-width: 360px) {
-    .width-half{
-        min-height: 60px;
-    }
+    
     .btn {
         width: 250px !important;
     }
@@ -139,8 +137,12 @@ input:focus, select:focus, textarea:focus {
 
 
 @media (min-width: 768px) {
-    .width-half{
-       min-height:60px;
+    .width-half {
+        max-width: 460px !important;
+    }
+
+    .width-full {
+        max-width: 520px !important;
     }
     .btn{
         width:250px !important;
@@ -149,7 +151,11 @@ input:focus, select:focus, textarea:focus {
 
 @media (min-width: 992px) {
     .width-half {
-        min-height:30px !important;
+        max-width: 595px !important;
+    }
+
+    .width-full {
+        max-width: 650px !important;
     }
     .btn {
         width: 100px !important;
@@ -173,7 +179,6 @@ input:focus, select:focus, textarea:focus {
     max-width: 100%;
     margin-top: 5px;
     margin-bottom: 2px;
-    
     font-size: 12px;
     margin-left:0px;
     color:black;
@@ -183,15 +188,5 @@ th {
     background-color: #3c8dbc;
     color:white;
 }
-
-
-thead tr:first-child th:first-child{
-    border-top-left-radius: 0.6em !important;
-}
-
-thead tr:first-child th:last-child {
-    border-top-right-radius: 0.6em !important;
-}
-
 
 
